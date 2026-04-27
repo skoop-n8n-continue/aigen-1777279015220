@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Timer App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="timer-container">
+        <div id="timer-display">00:00:00</div>
+        <div id="controls">
+            <div id="time-input">
+                <input type="number" id="minutes-input" placeholder="Minutes" min="0" value="5">
+                <input type="number" id="seconds-input" placeholder="Seconds" min="0" max="59" value="0">
+                <button id="set-time-button">Set Time</button>
+            </div>
+            <button id="start-button">Start</button>
+            <button id="pause-button">Pause</button>
+            <button id="reset-button">Reset</button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
